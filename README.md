@@ -3,7 +3,7 @@ Web Base POS Sales And Inventory System Built Using Codeigniter Framework
 
 This Is The Login Page
 ![](images/1.PNG)
-Their are 3 types of users.
+There are 3 types of users.
 1. Cashier
 2. Clerk
 3. Admin
