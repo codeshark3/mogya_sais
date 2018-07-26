@@ -49,7 +49,7 @@
 <label class="lead">Total Sales Today: 
 <?php
 	if($total > 0) {
-		echo '₱'.$total;
+		echo 'GHC'.$total;
 	}
 ?>	
 </label>

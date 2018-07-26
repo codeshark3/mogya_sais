@@ -11,8 +11,8 @@ class Sales_model extends CI_Model {
 		$id = '00' + rand();
 		foreach ($data as $sale) {
 			
-			$item_price = trim($sale[3], '₱');
-			$sub_total = trim($sale[4], '₱');
+			$item_price = trim($sale[3], 'GHC');
+			$sub_total = trim($sale[4], 'GHC');
 			$arr = array(
 				'sale_id' => "$id",
 				'item_id' => "$sale[0]",

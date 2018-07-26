@@ -22,7 +22,7 @@ class Get extends CI_Controller {
 			<label id="name">Item Name : <?php echo $name ?></label>
 			</div>
 			<div class="lb">
-				<label id="prc">Price : ₱<span id="price"><?php echo $price ?></span></label>
+				<label id="prc">Price : GHC<span id="price"><?php echo $price ?></span></label>
 			</div>
 			<div class="lb">
 				<label id="description">Description : <?php echo $description ?></label>
@@ -59,14 +59,14 @@ class Get extends CI_Controller {
 			<td>$id</td>
 			<td>$item_name</td>
 			<td>$quantity</td>
-			<td>₱$price</td>
-			<td>₱$sub_total</td>
+			<td>$price</td>
+			<td>$sub_total</td>
 		</tr>
 
 		";
 		echo "<script>
 
-		$('#amount_due').html('₱' +$amount_due);
+		$('#amount_due').html('GHC' +$amount_due);
 		</script>";
 		}else {
 			echo "

@@ -21,7 +21,7 @@
 				foreach ($items as $item) {
 					$itemName = urlencode($item->name);
 					$num++;
-					$item_table = $this->table->add_row($num, $item->name, $item->category, $item->description,$item->quantities,'₱'. $item->price,"
+					$item_table = $this->table->add_row($num, $item->name, $item->category, $item->description,$item->quantities,'GHC'. $item->price,"
 						<a href='".base_url("item/stock_in/$itemName")."'><button class='btn btn-primary btn-sm'>STOCK IN</button></a> 
 						<a href='".base_url("item/update/$itemName")."'><button class='btn btn-info btn-sm'>UPDATE</button></a> 
 						<a href='".base_url("item/delete/$item->id")."'><button class='btn btn-info btn-warning btn-sm'>Delete</button></a>");
@@ -94,6 +94,12 @@
 				'name' => 'price',
 				'placeholder' => 'Item Price'
 				);
+			$barcodeAttr = array(
+				'class' => 'form-control',
+				'type' => 'text',
+				'name' => 'barcode',
+				'placeholder' => 'Item Barcode'
+				);
 			$submitAttr = array(
 				'class' => 'btn btn-primary',
 				'name' => 'submit_item',
@@ -124,6 +130,10 @@
 			echo '<div class="form-group">';
 			echo form_label('Price');
 			echo form_input($priceAttr);
+			echo '</div>';
+			echo '<div class="form-group">';
+			echo form_label('Barcode');
+			echo form_input($barcodeAttr);
 			echo '</div>';
 		
 			echo '<div class="form-group">';

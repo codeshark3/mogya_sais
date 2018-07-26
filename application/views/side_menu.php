@@ -25,7 +25,7 @@
 			<?php
 			}
 			 ?>
-			<li id="log-out" class="list-side-group-item <?php if ($location === 'lagout') {echo 'active-link';}?> "><a href="<?php echo base_url("logout/out") ?>"><span class="glyphicon glyphicon glyphicon-log-out"></span><br>Lagout</a></li>
+			<li id="log-out" class="list-side-group-item <?php if ($location === 'lagout') {echo 'active-link';}?> "><a href="<?php echo base_url("logout/out") ?>"><span class="glyphicon glyphicon glyphicon-log-out"></span><br>Logout</a></li>
 		</ul>
 	</div>
 </div>

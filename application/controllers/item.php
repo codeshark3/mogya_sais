@@ -16,12 +16,14 @@ class Item extends CI_Controller {
 				$name = $this->input->post('item_name');
 				$category = $this->input->post('category');
 				$description = $this->input->post('description');
+				$barcode = $this->input->post('barcode');
 				$creator = 'admin';
 				$quantity = 0;
 				$price = $this->input->post('price');
 				$this->form_validation->set_rules('item_name', 'Item Name', 'required|min_length[3]');
 				$this->form_validation->set_rules('description', 'Description', 'required|max_length[100]');
 				$this->form_validation->set_rules('price', 'Price', 'required|integer');
+				$this->form_validation->set_rules('barcode', 'Barcode', 'required|max_length[13]');
 				if($this->form_validation->run() == FALSE) {
 					$this->session->set_flashdata('errorMessage', '<div class="alert alert-danger">'.validation_errors() . '</div>');
 					redirect('new_item');
@@ -30,7 +32,7 @@ class Item extends CI_Controller {
 					redirect(base_url('new_item'));
 				}else {
 					$this->load->model('item_model');
-					$this->item_model->insertItem($name, $category, $description, $date_time, $creator, $quantity, $price);
+					$this->item_model->insertItem($name, $category, $description, $date_time, $creator, $quantity, $price,$barcode);
 				}
 			}else {
 				redirect(base_url('new_item'));

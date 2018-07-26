@@ -5,6 +5,7 @@
 	<input type="hidden" name="current_category" value="<?php echo $item->category ?>" >
 	<input type="hidden" name="current_description" value="<?php echo $item->description ?>">
 	<input type="hidden" name="current_price" value="<?php echo $item->price ?>">
+	<input type="hidden" name="current_barcode" value="<?php echo $item->barcode ?>">
 	<div class="form-group">
 		<label>Item Name</label>
 		<input type="text" name="update_name" placeholder="Item Name" class="form-control" value="<?php echo $item->name; ?>">
@@ -27,11 +28,16 @@
 		<input type="text" name="update_price" placeholder="Item Name" class="form-control" value="<?php echo $item->price; ?>">
 	</div>
 	<div class="form-group">
+		<label>Barcode</label>
+		<input type="text" name="update_barcode" placeholder="Item Name" class="form-control" value="<?php echo $item->barcode; ?>">
+	</div>
+	<div class="form-group">
 		<label>Description</label>
 		<textarea name="update_description" class="form-control" rows="5"><?php echo $item->description ?></textarea>
 	</div>
 	<div class="form-group">
 		<input type="submit" name="submit" value="Update" class="btn btn-primary">
 	</div>
+	
 	<?php echo form_close();?>
 </div>

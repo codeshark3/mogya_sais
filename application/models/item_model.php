@@ -1,6 +1,6 @@
 <?php
 class Item_model extends CI_Model {
-	public function insertItem($name, $category, $description, $date_time, $creator, $quantity, $price) 
+	public function insertItem($name, $category, $description, $date_time, $creator, $quantity, $price,$barcode) 
 	{
 		$data = array(
 			'name' => "$name",
@@ -9,7 +9,9 @@ class Item_model extends CI_Model {
 			'date_time' => "$date_time",
 			'creator' => "$creator",
 			'quantities' => "$quantity",
-			'price' =>	"$price"
+			'price' =>	"$price",
+			'barcode' => "$barcode"
+
 			);
 		$this->load->database();
 		$sql = $this->db->insert('items', $data);
@@ -48,7 +50,8 @@ class Item_model extends CI_Model {
 			'name' => "$name",
 			'category' => "$category",
 			'description' => "$description",
-			'price' => "$price"
+			'price' => "$price",
+			'barcode'=> "$barcode"
 			);
 
 		$this->db->where('id',$id);

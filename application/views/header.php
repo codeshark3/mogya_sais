@@ -8,8 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/style.css')?>">
 </head>
 <body>
-<header style="height: 60px; background: #2d2626; color: white;" class="">
-	<?php
+
+	
+
+	
+
+<nav class="navbar navbar-inverse">
+<?php
 		$cur_date = date('l, F Y');
 		if ($this->session->userdata('log_in')) {
 			?>
@@ -17,12 +22,20 @@
 			<?php
 		}
 	?>
+<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
 	
-	<div style="padding-left: 20px; padding-top: 2px;">
-		<h2 style="margin: 0">POS Sales and Inventory System</h2>
-		<p style="margin: 0;">By: Alger Makiputin</p>
+	<div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Mogya Bi Akasa</a>
 	</div>
-</header>
-<div class="row" style="margin-bottom: -10px;">
+	</div>
+	</nav>
+<div class="row" style="">
 <div class="container-fluid main-content" >
 

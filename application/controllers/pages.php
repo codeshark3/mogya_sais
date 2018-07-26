@@ -56,7 +56,7 @@ class Pages extends CI_Controller {
 	}
 
 	public function lagout () {
-		echo 'lagout';
+		echo 'logout';
 	}
 }
 

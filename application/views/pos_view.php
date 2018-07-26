@@ -103,7 +103,7 @@
 <a href="<?php echo base_url('logout/out') ?>"><button style="float: right; margin-top: 6px; margin-right: 20px;" class="btn btn-primary btn-lg" >Sign Out</button></a>
 	<div style="padding-left: 20px; padding-top: 2px;">
 		<h2 style="margin: 0">POS Sales and Inventory System</h2>
-		<p style="margin: 0;">By: Alger Makiputin</p>
+		
 	</div>
 </header>
 <div class="main">

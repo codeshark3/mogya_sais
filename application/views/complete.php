@@ -10,8 +10,8 @@
 <body>
 <header style="margin-bottom: 40px; color: white">
 <div style="padding-left: 20px; padding-top: 2px;">
-		<h2 style="margin: 0">POS Sales and Inventory System</h2>
-		<p style="margin: 0;">By: Alger Makiputin</p>
+		<h2 style="margin: 0">Mogya Bi Akasa</h2>
+		
 	</div>
 </header>
 <div class="main">
@@ -28,19 +28,19 @@
 <p class="lead">Total Amount Due: <span style="float: right;">:</span></p>
 </div>
 <div class="col-sm-7">
-	<p class="lead">₱<?php echo $total;?></p>
+	<p class="lead">GHC<?php echo $total;?></p>
 </div>
 <div class="col-sm-5">
 	<p class="lead">Payment<span style="float: right;">:</span> </p>
 </div>
 <div class="col-sm-7">
-	<p class="lead">₱<?php echo $payment;?></p>
+	<p class="lead">GHC<?php echo $payment;?></p>
 </div>
 <div class="col-sm-5">
 	<p class="lead">Change<span style="float: right;">:</span> </p>
 </div>
 <div class="col-sm-7">
-	<p class="lead">₱<?php echo $change;?></p>
+	<p class="lead">GHC<?php echo $change;?></p>
 </div>
 </div>
 </div>

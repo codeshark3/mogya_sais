@@ -72,7 +72,7 @@
 				</div>
 			</div>
 			<div class="col-sm-8">
-				<p class="lead">₱<?php echo $item_info->price; ?></p>
+				<p class="lead">GHC<?php echo $item_info->price; ?></p>
 			</div>
 			</div>
 		</div>
